@@ -1,14 +1,12 @@
 # README
-<<<<<<< HEAD
+
 El Mehdi CHOUHAM in collaboration with CRISTAL laboratory
 =======
 El Mehdi CHOUHAM avec le Laboratoire CRISTAL
->>>>>>> 741751523c45e7f134195c173b209b8bf1b5a479
 
 ---
 
 # Projet
-<<<<<<< HEAD
 This project is a poursuite of the project initiated by Baas Simon & Meinas Julien in collaboration with the CRISTAL Laboratory using TensorFlow, for more information on their project: 
 https://github.com/simonbaas-gif/PJI-BAAS-MEINAS
 
@@ -144,7 +142,7 @@ Le projet nécessite l'installation de différentes librairies python comme déc
 
 ### Dataset
 coco entrainé sur coco pour plus de précision (volumineuse mais plein d'alternatives diponible)
->>>>>>> 741751523c45e7f134195c173b209b8bf1b5a479
+
 
 ### Dataset pour tester le projet
 
@@ -160,7 +158,6 @@ https://bdd-data.berkeley.edu/
 
 Idéale pour notre utilisation mais fichier des annotations non gratuit !
 
-<<<<<<< HEAD
 =======
 ### Création des Modèles
 
@@ -171,7 +168,6 @@ On configure ensuite le node cfg pour modifier le seuil, le cpu/ les gpus utilis
 
 On préviligie ici de garder un modèle entrainer par la méthode mask rcnn R-CNN  utilisant un backbone ResNet.
 
->>>>>>> 741751523c45e7f134195c173b209b8bf1b5a479
 #### D'autres Modèles utilisant un backbone ResNET
 https://reposhub.com/python/deep-learning/zhanghang1989-detectron2-ResNeSt.html
 
