@@ -51,7 +51,7 @@ if no model was suppplied, faster rcnn is use as default
 ---
 
 ## TODO for obstacles avoidance
-1 - Create a movement law for the car
+1 - Create a movement law for the car<br/>
 2 - Use the 'obstacles' topic msg to command the car
 
 
