@@ -5,7 +5,7 @@ Detectron2OnROS : a Detectron2 package for ROS
 El Mehdi CHOUHAM in collaboration with CRISTAL laboratory
 ---
 
-# Projet
+# About
 This project is a poursuite of the project initiated by Baas Simon & Meinas Julien in collaboration with the CRISTAL Laboratory using TensorFlow, for more information on their project: 
 https://github.com/simonbaas-gif/PJI-BAAS-MEINAS
 
