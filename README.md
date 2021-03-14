@@ -1,9 +1,8 @@
 # README
 
-El Mehdi CHOUHAM in collaboration with CRISTAL laboratory
+Detectron2OnROS : a Detectron2 package for ROS
 =======
-El Mehdi CHOUHAM avec le Laboratoire CRISTAL
-
+El Mehdi CHOUHAM in collaboration with CRISTAL laboratory
 ---
 
 # Projet
