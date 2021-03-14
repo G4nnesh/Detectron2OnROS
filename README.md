@@ -17,33 +17,33 @@ This package will supply other device nodes with the needed information to perfo
 @devs If you have the same system carateristics as this project developper, follow install.md steps
 if you don't have the same architecture please ignore this step !
 
-## Prequisites (source installation recommanded)
-# for your device to use gpu install
+# Prequisites (source installation recommanded)
+## for your device to use gpu install
 cuDNN/ Cuda Toolkit
 
-# Python requirements
+## Python requirements
 pyTorch/ libtorch
 openCV 
 detectron2
 
-# Linux requirements
+## Linux requirements
 ROS==ROS NOETIC
 pyhton-is-python3
 
 
-## Configuration
+# Configuration
 
 - Use ./configure_predictor/tools/labelme2coco.py to generate a COCO format json label file
 - Fine-tune the model to your classes and evaluate it on the notebook jupyter ./configure_predictor/tools/train_&_evaluate.ipynb
 
 if no model was suppplied, faster rcnn is use as default
 
-## Create ROS package
+# Build ROS package
 
 - Export your model on the script in ./detection_ROS/catkin_ws/src/detection_pkg/scripts/detector_from_input.py
 - Go back to ./detection_ROS/catkin_ws and rebuild with `catkin_make`
 
-## Run Ros detection package
+# Run Ros detection package
 
 - source your environnement with `source devel/setup.bash`
 - launch package with : `roskaunch detection_pkg detection_pkg.launch`
