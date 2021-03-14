@@ -1,0 +1,14 @@
+<launch>
+  <node
+    pkg="detection_pkg"
+    type="detector_from_input.py"
+    name="detecor_from_input"
+    output="screen"
+  />
+  <node
+    pkg="detection_pkg"
+    type="detector_sub.py"
+    name="detector_sub"
+    output="screen"
+  />
+</launch>
