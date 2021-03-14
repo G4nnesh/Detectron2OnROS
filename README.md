@@ -60,88 +60,10 @@ if no model was suppplied, faster rcnn is use as default
 
 ## Caractèristiques et Suggestions
 
-### Dataset
-coco entrainé sur coco pour plus de précision (volumineuse mais plein d'alternatives diponibles)
+## Dataset
 =======
-Ce projet est une suite du projet initier par Baas Simon & Meinas Julien en collaboration avec le Laboratoire CRISTAL utilisant TensorFlow, pour plus d'information sur leurs projet : 
-https://github.com/simonbaas-gif/PJI-BAAS-MEINAS
 
-Dans ce projet on introduit l'utilisation de l'outil Detecrtron2 de FAIR basé sur PyTorch, c'est l'outil est le plus rapide pour le moment pour entrainer et configurer des modèles, avec un grand choix d'algorithmes de detection d'objet.
-
-On implemente ensuite le script obtenue sur le middleware ROS noetic, en créant une node qui detectent les objects.
-
-
-## Installation du projet
-
-Les étapes concernant l'installation des drives NVIDIA, Detectron2 et ses dependences ainsi que ROS Noetic et les packages/ librairies utiles sont disponibles dans install.md.
-
-## Les différents scripts du projet
-
-- PredictorFromModel.py
-
-Script de configuration du modèle : Crée une classe du prédicteur basé sur le modèle entrainé vie le notebook jupyter disponible dans tool/configuration_model.ipynb
-
-- objectPredictor.py
-
-Script principal : Lance la détection d'objets sur les images de test présentes dans le répertoire test_images et affiche la sortie en cpu ou vua les gpus.
-
-
-## Execution des scripts
-- Utiliser -help pour avoir plus d'information sur l'execution de objectPredictor.py
-    exemple pour un flux camera affiché sur une fenêtre : python objectPredictor.py --camera <port de la camera>
-
-## Installation des librairies
-
-Le projet nécessite l'installation de différentes librairies python comme décrit dans install.md. L'installation via conda est recommandée !
-
----
-
-## Procédure suivie
-1 - Entrainement et configuration du modèle sur le notebook : detection_Detectron2/tool/configuration_model.ipynb
-
-2 - Une fois le modèle fixé, on le copie dans le zone réservé dans le script PredictorFromModel.py
-
-3 - Implémentation des scripts dans l'environnement ROS: /detection_ROS/catkin_ws/scripts 
-!Puis, affecter un droit d'éxecution au script (+x) !
-
-4 - Création des packages et des nodes via rospy #TODO
-
-5 - Récuperation du Topic et contrôle du mouvement #TODO
-
-## Structure du projet 
-├── dependencies
-│   ├── cuda_install #Dossier d'extraction de cudnn et cuda toolkit + script bash d'installation
-│   │   └── cuda
-│   ├── libTorch_install #Dossier d'extraction de libtorch + script bash d'installation mais TorchVision est recommendé
-│   │   ├── libtorch
-│   │   └── pytorch
-│   └── ros_install
-├── detection_Detectron2 # Dossier des scripts de detection Detectron
-│   ├── configs # Configuration possibles
-│   ├── modelCheckpoints # Configuration possibles
-│   ├── output # Dossier des sauvegardes de la sortie des test si choisie choisie
-│   ├── __pycache__
-│   ├── test_images # Jeu de tests. (pour comparer à la preière version du projet)
-│   │   └── result
-│   └── tool #Notebook Jupyter et dépendences pour configurer, tester et voir les métriques du modèle avant de l'implementer
-└── detection_ROS # Dossier de la partie Middleware
-    └── catkin_ws # Dossier du WorkSpace
-        ├── build
-        ├── devel # Installation des packages compilé
-        ├── libuvc
-        ├── scripts # scripts utilsés
-        └── src # packages
-
-## TODO 
-1 - Création d'une node ROS noetic basé sur le script
-2 - Connexion des bus du contrôleur recemment reçus du constructeur et contrôle
-
-
-## caractèristiques et suggestions
-
-### Dataset
-coco entrainé sur coco pour plus de précision (volumineuse mais plein d'alternatives diponible)
-
+entrainé sur coco pour plus de précision (volumineuse mais plein d'alternatives diponible)
 
 ### Dataset pour tester le projet
 
